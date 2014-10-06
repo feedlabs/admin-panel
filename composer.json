@@ -1,0 +1,35 @@
+{
+  "name": "feedlabs/admin-panel",
+  "config": {
+    "github-oauth": {
+      "github.com": "55c9e3a9185a8c4b74897c7130e9fda113625748"
+    }
+  },
+  "require": {
+    "cargomedia/cm": "~1.71.0",
+    "feedlabs/sdk-php": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.3.0",
+    "tomaszdurka/mocka": "~0.8.0"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:feedlabs/sdk-php.git"
+    }
+  ],
+  "minimum-stability": "alpha",
+  "autoload": {
+    "psr-0": {
+      "AP_": "library/AP/library/"
+    }
+  },
+  "extra": {
+    "cm-modules": {
+      "AP": {
+        "path": "library/AP/"
+      }
+    }
+  }
+}
