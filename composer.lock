@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e7f399f966d22dccc28ce7100231894a",
+    "hash": "aaa1dd1421a1f8cf7fe55dc32024c67d",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -16,9 +16,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/36434f2cd96ea78844478d897fb568a1866bce5a",
+                "url": "http://satis.cargomedia.ch/dist/dist/aws-aws-sdk-php-36434f2cd96ea78844478d897fb568a1866bce5a-zip-7b8f23.zip",
                 "reference": "36434f2cd96ea78844478d897fb568a1866bce5a",
-                "shasum": ""
+                "shasum": "4d9fe18d7a5e56104718980becbb55823a51e3bf"
             },
             "require": {
                 "guzzle/guzzle": ">=3.7.0,<=3.9.9",
@@ -75,17 +75,17 @@
         },
         {
             "name": "cargomedia/cm",
-            "version": "1.71.8",
+            "version": "1.72.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cargomedia/CM.git",
-                "reference": "0d2355a45283c3c5901bfa0fd59c977ba6d3cb9a"
+                "reference": "665d45cbe89e5fecd0fefdc341fed28f8eb1b6fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cargomedia/CM/zipball/0d2355a45283c3c5901bfa0fd59c977ba6d3cb9a",
-                "reference": "0d2355a45283c3c5901bfa0fd59c977ba6d3cb9a",
-                "shasum": ""
+                "url": "http://satis.cargomedia.ch/dist/dist/cargomedia-cm-665d45cbe89e5fecd0fefdc341fed28f8eb1b6fa-zip-6e8712.zip",
+                "reference": "665d45cbe89e5fecd0fefdc341fed28f8eb1b6fa",
+                "shasum": "0ae315a6e9ca86898b93595f4577779a6c9b3064"
             },
             "require": {
                 "aws/aws-sdk-php": "~2.6.0",
@@ -128,7 +128,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2014-09-29 15:06:48"
+            "time": "2014-10-06 10:43:02"
         },
         {
             "name": "composer/composer",
@@ -140,9 +140,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/1eb1df44a97fb2daca1bb8b007f3bee012f0aa46",
+                "url": "http://satis.cargomedia.ch/dist/dist/composer-composer-1eb1df44a97fb2daca1bb8b007f3bee012f0aa46-zip-b3273d.zip",
                 "reference": "1eb1df44a97fb2daca1bb8b007f3bee012f0aa46",
-                "shasum": ""
+                "shasum": "ccb2c240b9aa72653440934212dd534446aa67b2"
             },
             "require": {
                 "justinrainbow/json-schema": "1.1.*",
@@ -187,8 +187,7 @@
                 {
                     "name": "Nils Adermann",
                     "email": "naderman@naderman.de",
-                    "homepage": "http://www.naderman.de",
-                    "role": "Developer"
+                    "homepage": "http://www.naderman.de"
                 }
             ],
             "description": "Dependency Manager",
@@ -210,9 +209,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/easybook/geshi/zipball/2582e8134c8af41d7f367e421ee0b8b111e89f36",
+                "url": "http://satis.cargomedia.ch/dist/dist/easybook-geshi-2582e8134c8af41d7f367e421ee0b8b111e89f36-zip-f3a77f.zip",
                 "reference": "2582e8134c8af41d7f367e421ee0b8b111e89f36",
-                "shasum": ""
+                "shasum": "58898963f2e942961d71cb664212e57cec07fb3c"
             },
             "require": {
                 "php": ">4.3.0"
@@ -230,9 +229,7 @@
             "authors": [
                 {
                     "name": "Benny Baumann",
-                    "email": "BenBE@geshi.org",
-                    "homepage": "http://blog.benny-baumann.de/",
-                    "role": "Developer"
+                    "email": "BenBE@geshi.org"
                 },
                 {
                     "name": "Nigel McNie",
@@ -315,9 +312,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
+                "url": "http://satis.cargomedia.ch/dist/dist/guzzle-guzzle-4de0618a01b34aa1c8c33a3f13f396dcd3882eba-zip-52886a.zip",
                 "reference": "4de0618a01b34aa1c8c33a3f13f396dcd3882eba",
-                "shasum": ""
+                "shasum": "8a1150e986acca9b715c25b3997f905b6cfbaa8e"
             },
             "require": {
                 "ext-curl": "*",
@@ -407,9 +404,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/e196b8f44f9492a11261ea8f7b9724613a198daf",
+                "url": "http://satis.cargomedia.ch/dist/dist/guzzlehttp-guzzle-e196b8f44f9492a11261ea8f7b9724613a198daf-zip-3a5237.zip",
                 "reference": "e196b8f44f9492a11261ea8f7b9724613a198daf",
-                "shasum": ""
+                "shasum": "15caf8ea3172852218a4f0976b870b1347df74fb"
             },
             "require": {
                 "ext-json": "*",
@@ -472,9 +469,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/streams/zipball/fb0d1ee29987c2bdc59867bffaade6fc88c2675f",
+                "url": "http://satis.cargomedia.ch/dist/dist/guzzlehttp-streams-fb0d1ee29987c2bdc59867bffaade6fc88c2675f-zip-88ddd8.zip",
                 "reference": "fb0d1ee29987c2bdc59867bffaade6fc88c2675f",
-                "shasum": ""
+                "shasum": "7ece855e280b334874427aa175a51e30f866b305"
             },
             "require": {
                 "php": ">=5.4.0"
@@ -525,9 +522,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/05ff6d8d79fe3ad190b0663d80d3f9deee79416c",
+                "url": "http://satis.cargomedia.ch/dist/dist/justinrainbow-json-schema-05ff6d8d79fe3ad190b0663d80d3f9deee79416c-zip-ce5f8b.zip",
                 "reference": "05ff6d8d79fe3ad190b0663d80d3f9deee79416c",
-                "shasum": ""
+                "shasum": "3f76e8896d89cde5a0040baff2dac3e5bdf675fc"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -558,7 +555,7 @@
                 },
                 {
                     "name": "Robert Schönthal",
-                    "email": "robert.schoenthal@gmail.com",
+                    "email": "seroscho@googlemail.com",
                     "homepage": "http://digitalkaoz.net"
                 }
             ],
@@ -580,9 +577,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kickboxio/kickbox-php/zipball/719ba1df640465462c083b79fb726cc84eaeb606",
+                "url": "http://satis.cargomedia.ch/dist/dist/kickbox-kickbox-719ba1df640465462c083b79fb726cc84eaeb606-zip-94241e.zip",
                 "reference": "719ba1df640465462c083b79fb726cc84eaeb606",
-                "shasum": ""
+                "shasum": "5fdba0348de3c14f47871aeb01ab344cbd1db4f0"
             },
             "require": {
                 "ext-json": "*",
@@ -628,9 +625,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kissmetrics/kissmetrics-php/zipball/9e4ad11cf9f26222499a6f255b4ce2ce3038be6d",
+                "url": "http://satis.cargomedia.ch/dist/dist/kissmetrics-kissmetrics-php-9e4ad11cf9f26222499a6f255b4ce2ce3038be6d-zip-b48779.zip",
                 "reference": "9e4ad11cf9f26222499a6f255b4ce2ce3038be6d",
-                "shasum": ""
+                "shasum": "41b1e0102f31d6979cfa1075239663598c04f6af"
             },
             "require": {
                 "php": ">=5.3"
@@ -673,9 +670,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/leafo/lessphp/zipball/a11a6141b5715162b933c405379765d817891c5d",
+                "url": "http://satis.cargomedia.ch/dist/dist/leafo-lessphp-a11a6141b5715162b933c405379765d817891c5d-zip-5c3bef.zip",
                 "reference": "a11a6141b5715162b933c405379765d817891c5d",
-                "shasum": ""
+                "shasum": "52384b7a566d6a832ede493ae7e10531bc93330f"
             },
             "type": "library",
             "extra": {
@@ -714,9 +711,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lstrojny/functional-php/zipball/a3972246bacb52d9080f89fd56d9ab4df60e874f",
+                "url": "http://satis.cargomedia.ch/dist/dist/lstrojny-functional-php-a3972246bacb52d9080f89fd56d9ab4df60e874f-zip-bf2880.zip",
                 "reference": "a3972246bacb52d9080f89fd56d9ab4df60e874f",
-                "shasum": ""
+                "shasum": "26ece59fadbdcfd1fd6caa91eb516639f70cb228"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -758,9 +755,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/96d8150406f67e683ef4acc09fef91785fef1266",
+                "url": "http://satis.cargomedia.ch/dist/dist/michelf-php-markdown-96d8150406f67e683ef4acc09fef91785fef1266-zip-ca9bc4.zip",
                 "reference": "96d8150406f67e683ef4acc09fef91785fef1266",
-                "shasum": ""
+                "shasum": "61fd5f0deac27f96eb7deea02f8d89a98c475db6"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -809,9 +806,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nicmart/Tree/zipball/db8b5818e90da03d50662b5ed91ba19dd98e7c50",
+                "url": "http://satis.cargomedia.ch/dist/dist/nicmart-tree-db8b5818e90da03d50662b5ed91ba19dd98e7c50-zip-c00719.zip",
                 "reference": "db8b5818e90da03d50662b5ed91ba19dd98e7c50",
-                "shasum": ""
+                "shasum": "2b84a82655a16386b53ecf76b0a133577deb61c8"
             },
             "require": {
                 "php": ">=5.4"
@@ -847,9 +844,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/4d9434e394496a5bb7acd9e73046587184b413df",
+                "url": "http://satis.cargomedia.ch/dist/dist/phpmailer-phpmailer-4d9434e394496a5bb7acd9e73046587184b413df-zip-244a31.zip",
                 "reference": "4d9434e394496a5bb7acd9e73046587184b413df",
-                "shasum": ""
+                "shasum": "3c2279e86f4243d35e3aec8cf3e4f2d5910ee9c4"
             },
             "require": {
                 "php": ">=5.0.0"
@@ -900,9 +897,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ruflin/Elastica/zipball/92155a36c94ebe15b09661ae804acbe4bdd4ad6b",
+                "url": "http://satis.cargomedia.ch/dist/dist/ruflin-elastica-92155a36c94ebe15b09661ae804acbe4bdd4ad6b-zip-762852.zip",
                 "reference": "92155a36c94ebe15b09661ae804acbe4bdd4ad6b",
-                "shasum": ""
+                "shasum": "aaa0de1a98ef45dc0a8f14d44504676ae3508658"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -931,7 +928,6 @@
                     "Elastica\\Test": "test/lib/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "Apache 2.0"
             ],
@@ -959,9 +955,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/a7bc2ec9520ad15382292591b617c43bdb1fec35",
+                "url": "http://satis.cargomedia.ch/dist/dist/seld-jsonlint-a7bc2ec9520ad15382292591b617c43bdb1fec35-zip-7b1070.zip",
                 "reference": "a7bc2ec9520ad15382292591b617c43bdb1fec35",
-                "shasum": ""
+                "shasum": "375f1d3ef51f63a75b3e302ae7a0a1656e10f538"
             },
             "require": {
                 "php": ">=5.3.0"
@@ -1002,6 +998,12 @@
                 "type": "svn",
                 "url": "http://smarty-php.googlecode.com/svn",
                 "reference": "/tags/v3.1.16/@4802"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://satis.cargomedia.ch/dist/dist/smarty-smarty-v3.1.16-2e0f6e.zip",
+                "reference": "/tags/v3.1.16/@4802",
+                "shasum": "b59a38c92ddee5e064db000df6166b4f6b7a820f"
             },
             "require": {
                 "php": ">=5.2"
@@ -1050,9 +1052,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/ca053eaa031c93afb68a71e4eb1f4168dfd4a661",
+                "url": "http://satis.cargomedia.ch/dist/dist/symfony-console-ca053eaa031c93afb68a71e4eb1f4168dfd4a661-zip-12c193.zip",
                 "reference": "ca053eaa031c93afb68a71e4eb1f4168dfd4a661",
-                "shasum": ""
+                "shasum": "085a0573fc1485c189edb9eb29a9054ec048b363"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1105,9 +1107,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/f6281337bf5f985f585d1db6a83adb05ce531f46",
+                "url": "http://satis.cargomedia.ch/dist/dist/symfony-event-dispatcher-f6281337bf5f985f585d1db6a83adb05ce531f46-zip-468d26.zip",
                 "reference": "f6281337bf5f985f585d1db6a83adb05ce531f46",
-                "shasum": ""
+                "shasum": "d9dea195f767f68f63a8a72bbc98c0f116d44069"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1162,9 +1164,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/d5033742b9a6206ef6d06e813870bca18e9205df",
+                "url": "http://satis.cargomedia.ch/dist/dist/symfony-finder-d5033742b9a6206ef6d06e813870bca18e9205df-zip-20b6c6.zip",
                 "reference": "d5033742b9a6206ef6d06e813870bca18e9205df",
-                "shasum": ""
+                "shasum": "71b23950c71464c29146fad99eeb3a7abc137625"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1209,9 +1211,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/8a1ec96c4e519cee0fb971ea48a1eb7369dda54b",
+                "url": "http://satis.cargomedia.ch/dist/dist/symfony-process-8a1ec96c4e519cee0fb971ea48a1eb7369dda54b-zip-fc05f3.zip",
                 "reference": "8a1ec96c4e519cee0fb971ea48a1eb7369dda54b",
-                "shasum": ""
+                "shasum": "3c89d1565feca080012b2f441716dc8a9fb2d9f5"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1248,60 +1250,6 @@
     ],
     "packages-dev": [
         {
-            "name": "doctrine/instantiator",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "26404e0c90565b614ee76b988b9bc8790d77f590"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/26404e0c90565b614ee76b988b9bc8790d77f590",
-                "reference": "26404e0c90565b614ee76b988b9bc8790d77f590",
-                "shasum": ""
-            },
-            "require": {
-                "php": "~5.3"
-            },
-            "require-dev": {
-                "athletic/athletic": "~0.1.8",
-                "ext-pdo": "*",
-                "ext-phar": "*",
-                "phpunit/phpunit": "~4.0",
-                "squizlabs/php_codesniffer": "2.0.*@ALPHA"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Doctrine\\Instantiator\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Marco Pivetta",
-                    "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/"
-                }
-            ],
-            "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
-            "homepage": "https://github.com/doctrine/instantiator",
-            "keywords": [
-                "constructor",
-                "instantiate"
-            ],
-            "time": "2014-08-25 15:09:25"
-        },
-        {
             "name": "phpunit/php-code-coverage",
             "version": "2.0.11",
             "source": {
@@ -1311,9 +1259,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/53603b3c995f5aab6b59c8e08c3a663d2cc810b7",
+                "url": "http://satis.cargomedia.ch/dist/dist/phpunit-php-code-coverage-53603b3c995f5aab6b59c8e08c3a663d2cc810b7-zip-fe3875.zip",
                 "reference": "53603b3c995f5aab6b59c8e08c3a663d2cc810b7",
-                "shasum": ""
+                "shasum": "8a64619f481908876c7c9c817ed01459be8a6436"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -1376,9 +1324,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/acd690379117b042d1c8af1fafd61bde001bf6bb",
+                "url": "http://satis.cargomedia.ch/dist/dist/phpunit-php-file-iterator-acd690379117b042d1c8af1fafd61bde001bf6bb-zip-831201.zip",
                 "reference": "acd690379117b042d1c8af1fafd61bde001bf6bb",
-                "shasum": ""
+                "shasum": "51620effbec0558e41277a94a78da1599016e3e0"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1421,9 +1369,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
+                "url": "http://satis.cargomedia.ch/dist/dist/phpunit-php-text-template-206dfefc0ffe9cebf65c413e3d0e809c82fbf00a-zip-dce9d3.zip",
                 "reference": "206dfefc0ffe9cebf65c413e3d0e809c82fbf00a",
-                "shasum": ""
+                "shasum": "06b281eae707c5b60ec53e028086e9a6d3bd81db"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1465,9 +1413,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
+                "url": "http://satis.cargomedia.ch/dist/dist/phpunit-php-timer-19689d4354b295ee3d8c54b4f42c3efb69cbc17c-zip-04e2aa.zip",
                 "reference": "19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
-                "shasum": ""
+                "shasum": "5c8a1f0e9ab7cdee0511357040d1694fef51b55f"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1509,9 +1457,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/f8d5d08c56de5cfd592b3340424a81733259a876",
+                "url": "http://satis.cargomedia.ch/dist/dist/phpunit-php-token-stream-f8d5d08c56de5cfd592b3340424a81733259a876-zip-dd5952.zip",
                 "reference": "f8d5d08c56de5cfd592b3340424a81733259a876",
-                "shasum": ""
+                "shasum": "606a19e84d23290dc8add1d1a8c0b325a4cc2698"
             },
             "require": {
                 "ext-tokenizer": "*",
@@ -1550,17 +1498,17 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.3.0",
+            "version": "4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "6913ac6c2f71ce18ff09b605df2fa37a6d789fd9"
+                "reference": "241116219bb7e3b8111a36ffd8f37546888738d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/6913ac6c2f71ce18ff09b605df2fa37a6d789fd9",
-                "reference": "6913ac6c2f71ce18ff09b605df2fa37a6d789fd9",
-                "shasum": ""
+                "url": "http://satis.cargomedia.ch/dist/dist/phpunit-phpunit-241116219bb7e3b8111a36ffd8f37546888738d6-zip-8be8f5.zip",
+                "reference": "241116219bb7e3b8111a36ffd8f37546888738d6",
+                "shasum": "2878421ed3a8b4e026ec7e3181ffcfbfd338c8f9"
             },
             "require": {
                 "ext-dom": "*",
@@ -1573,7 +1521,7 @@
                 "phpunit/php-file-iterator": "~1.3.1",
                 "phpunit/php-text-template": "~1.2",
                 "phpunit/php-timer": "~1.0.2",
-                "phpunit/phpunit-mock-objects": "~2.3",
+                "phpunit/phpunit-mock-objects": "2.1.5",
                 "sebastian/comparator": "~1.0",
                 "sebastian/diff": "~1.1",
                 "sebastian/environment": "~1.0",
@@ -1590,7 +1538,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.3.x-dev"
+                    "dev-master": "4.1.x-dev"
                 }
             },
             "autoload": {
@@ -1620,29 +1568,28 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2014-10-03 05:17:00"
+            "time": "2014-08-17 08:07:02"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "2.3.0",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "c63d2367247365f688544f0d500af90a11a44c65"
+                "reference": "7878b9c41edb3afab92b85edf5f0981014a2713a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/c63d2367247365f688544f0d500af90a11a44c65",
-                "reference": "c63d2367247365f688544f0d500af90a11a44c65",
-                "shasum": ""
+                "url": "http://satis.cargomedia.ch/dist/dist/phpunit-phpunit-mock-objects-7878b9c41edb3afab92b85edf5f0981014a2713a-zip-d50911.zip",
+                "reference": "7878b9c41edb3afab92b85edf5f0981014a2713a",
+                "shasum": "07597511ea9723877edd74b7a6602d8fcc69bd16"
             },
             "require": {
-                "doctrine/instantiator": "~1.0,>=1.0.1",
                 "php": ">=5.3.3",
                 "phpunit/php-text-template": "~1.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.3"
+                "phpunit/phpunit": "~4.1"
             },
             "suggest": {
                 "ext-soap": "*"
@@ -1650,7 +1597,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -1659,6 +1606,9 @@
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                ""
+            ],
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1675,21 +1625,21 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2014-10-03 05:12:11"
+            "time": "2014-06-12 07:22:15"
         },
         {
             "name": "sebastian/comparator",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "f7069ee51fa9fb6c038e16a9d0e3439f5449dcf2"
+                "reference": "e54a01c0da1b87db3c5a3c4c5277ddf331da4aef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/f7069ee51fa9fb6c038e16a9d0e3439f5449dcf2",
-                "reference": "f7069ee51fa9fb6c038e16a9d0e3439f5449dcf2",
-                "shasum": ""
+                "url": "http://satis.cargomedia.ch/dist/dist/sebastian-comparator-e54a01c0da1b87db3c5a3c4c5277ddf331da4aef-zip-c2bfb9.zip",
+                "reference": "e54a01c0da1b87db3c5a3c4c5277ddf331da4aef",
+                "shasum": "83ad766255ea7d17b40a2ae6fee46ce9680e1029"
             },
             "require": {
                 "php": ">=5.3.3",
@@ -1716,11 +1666,6 @@
             ],
             "authors": [
                 {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                },
-                {
                     "name": "Jeff Welch",
                     "email": "whatthejeff@gmail.com"
                 },
@@ -1731,6 +1676,10 @@
                 {
                     "name": "Bernhard Schussek",
                     "email": "bschussek@2bepublished.at"
+                },
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Provides the functionality to compare PHP values for equality",
@@ -1740,7 +1689,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2014-05-02 07:05:58"
+            "time": "2014-05-11 23:00:21"
         },
         {
             "name": "sebastian/diff",
@@ -1752,9 +1701,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/5843509fed39dee4b356a306401e9dd1a931fec7",
+                "url": "http://satis.cargomedia.ch/dist/dist/sebastian-diff-5843509fed39dee4b356a306401e9dd1a931fec7-zip-8a1f8b.zip",
                 "reference": "5843509fed39dee4b356a306401e9dd1a931fec7",
-                "shasum": ""
+                "shasum": "0645da2bd60ed77c8478548b10e3877340f84805"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1796,28 +1745,28 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "79517609ec01139cd7e9fded0dd7ce08c952ef6a"
+                "reference": "6288ebbf6fa3ed2b2ff2d69c356fbaaf4f0971a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/79517609ec01139cd7e9fded0dd7ce08c952ef6a",
-                "reference": "79517609ec01139cd7e9fded0dd7ce08c952ef6a",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/6288ebbf6fa3ed2b2ff2d69c356fbaaf4f0971a7",
+                "reference": "6288ebbf6fa3ed2b2ff2d69c356fbaaf4f0971a7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.0.*@dev"
+                "phpunit/phpunit": "~4.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -1832,8 +1781,7 @@
             "authors": [
                 {
                     "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
+                    "email": "sebastian@phpunit.de"
                 }
             ],
             "description": "Provides functionality to handle HHVM/PHP environments",
@@ -1843,27 +1791,27 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2014-02-18 16:17:19"
+            "time": "2014-10-07 09:23:16"
         },
         {
             "name": "sebastian/exporter",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/exporter.git",
-                "reference": "1f9a98e6f5dfe0524cb8c6166f7c82f3e9ae1529"
+                "reference": "c7d59948d6e82818e1bdff7cadb6c34710eb7dc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/1f9a98e6f5dfe0524cb8c6166f7c82f3e9ae1529",
-                "reference": "1f9a98e6f5dfe0524cb8c6166f7c82f3e9ae1529",
-                "shasum": ""
+                "url": "http://satis.cargomedia.ch/dist/dist/sebastian-exporter-c7d59948d6e82818e1bdff7cadb6c34710eb7dc0-zip-a859f0.zip",
+                "reference": "c7d59948d6e82818e1bdff7cadb6c34710eb7dc0",
+                "shasum": "f3e47ba2b24a850908e234c152a67e28f222c44d"
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.0.*@dev"
+                "phpunit/phpunit": "~4.0"
             },
             "type": "library",
             "extra": {
@@ -1882,11 +1830,6 @@
             ],
             "authors": [
                 {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de",
-                    "role": "lead"
-                },
-                {
                     "name": "Jeff Welch",
                     "email": "whatthejeff@gmail.com"
                 },
@@ -1895,13 +1838,16 @@
                     "email": "github@wallbash.com"
                 },
                 {
-                    "name": "Adam Harvey",
-                    "email": "aharvey@php.net",
-                    "role": "Lead"
-                },
-                {
                     "name": "Bernhard Schussek",
                     "email": "bschussek@2bepublished.at"
+                },
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Adam Harvey",
+                    "email": "aharvey@php.net"
                 }
             ],
             "description": "Provides the functionality to export PHP variables for visualization",
@@ -1910,7 +1856,7 @@
                 "export",
                 "exporter"
             ],
-            "time": "2014-02-16 08:26:31"
+            "time": "2014-09-10 00:51:36"
         },
         {
             "name": "sebastian/version",
@@ -1922,9 +1868,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/b6e1f0cf6b9e1ec409a0d3e2f2a5fb0998e36b43",
+                "url": "http://satis.cargomedia.ch/dist/dist/sebastian-version-b6e1f0cf6b9e1ec409a0d3e2f2a5fb0998e36b43-zip-ee05a0.zip",
                 "reference": "b6e1f0cf6b9e1ec409a0d3e2f2a5fb0998e36b43",
-                "shasum": ""
+                "shasum": "252d5509a896bd7a72985dbb22533b0c799609b1"
             },
             "type": "library",
             "autoload": {
@@ -1958,9 +1904,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/b1dbc53593b98c2d694ebf383660ac9134d30b96",
+                "url": "http://satis.cargomedia.ch/dist/dist/symfony-yaml-b1dbc53593b98c2d694ebf383660ac9134d30b96-zip-5b20d2.zip",
                 "reference": "b1dbc53593b98c2d694ebf383660ac9134d30b96",
-                "shasum": ""
+                "shasum": "9f11692f428ea788070d7e792e6a185a12a93819"
             },
             "require": {
                 "php": ">=5.3.3"
@@ -2004,9 +1950,9 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomaszdurka/codegenerator/zipball/7a90518e83d3b9a91d50c73b00ffb375e550624c",
+                "url": "http://satis.cargomedia.ch/dist/dist/tomaszdurka-codegenerator-7a90518e83d3b9a91d50c73b00ffb375e550624c-zip-848e56.zip",
                 "reference": "7a90518e83d3b9a91d50c73b00ffb375e550624c",
-                "shasum": ""
+                "shasum": "f1ee2ccf0742298071b816eeb5b06f78390f7338"
             },
             "require-dev": {
                 "phpunit/phpunit": "~3.7.10",
@@ -2029,17 +1975,17 @@
         },
         {
             "name": "tomaszdurka/mocka",
-            "version": "0.8.1",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tomaszdurka/mocka.git",
-                "reference": "4b51bc6e69b896f952224a6eeb09465a2e9387ed"
+                "reference": "2b4cc3246b87523d122416325ae27809ad5eafbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tomaszdurka/mocka/zipball/4b51bc6e69b896f952224a6eeb09465a2e9387ed",
-                "reference": "4b51bc6e69b896f952224a6eeb09465a2e9387ed",
-                "shasum": ""
+                "url": "http://satis.cargomedia.ch/dist/dist/tomaszdurka-mocka-2b4cc3246b87523d122416325ae27809ad5eafbb-zip-2c42d7.zip",
+                "reference": "2b4cc3246b87523d122416325ae27809ad5eafbb",
+                "shasum": "2075e9c5bfd30a72391f91f33f3506e5446372e9"
             },
             "require": {
                 "tomaszdurka/codegenerator": "~0.4.1"
@@ -2058,7 +2004,7 @@
             "license": [
                 "MIT"
             ],
-            "time": "2014-08-25 13:55:06"
+            "time": "2014-07-18 14:24:06"
         }
     ],
     "aliases": [],

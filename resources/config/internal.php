@@ -29,6 +29,7 @@ return function (CM_Config_Node $config) {
     $config->CM_Model_Abstract->types[29] = 'CM_Model_Location_State';
     $config->CM_Model_Abstract->types[30] = 'CM_Model_Location_Zip';
     $config->CM_Model_Abstract->types[36] = 'CM_Model_LanguageKey';
+    $config->CM_Model_Abstract->types[38] = 'AP_Model_User';
     
     $config->CM_Paging_ContentList_Abstract->types = array();
     $config->CM_Paging_ContentList_Abstract->types[19] = 'CM_Paging_ContentList_Badwords';
@@ -41,7 +42,7 @@ return function (CM_Config_Node $config) {
     $config->CM_Paging_Log_Abstract->types[24] = 'CM_Paging_Log_Warn';
     
     $config->CM_Site_Abstract->types = array();
-    $config->CM_Site_Abstract->types[37] = 'AP_Site_AdminPanel';
+    $config->CM_Site_Abstract->types[39] = 'AP_Site_AdminPanel';
     
     $config->CM_Stream_Adapter_Abstract->types = array();
     $config->CM_Stream_Adapter_Abstract->types[25] = 'CM_Stream_Adapter_Message_SocketRedis';
@@ -78,9 +79,10 @@ return function (CM_Config_Node $config) {
     $config->CM_Model_Location_State->type = 29;
     $config->CM_Model_Location_Zip->type = 30;
     $config->CM_Model_LanguageKey->type = 36;
-    $config->AP_Site_AdminPanel->type = 37;
+    $config->AP_Model_User->type = 38;
+    $config->AP_Site_AdminPanel->type = 39;
     
-    $config->CM_Class_Abstract->typesMaxValue = 37;
+    $config->CM_Class_Abstract->typesMaxValue = 39;
     
     $config->CM_Action_Abstract->verbs = array();
     $config->CM_Action_Abstract->verbs[CM_Action_Abstract::CREATE] = 1;

@@ -1,0 +1,12 @@
+.logo {
+  width: 150px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: image('logo.svg');
+
+  html.no-svg & {
+    background-image: image('logo.png');
+  }
+}

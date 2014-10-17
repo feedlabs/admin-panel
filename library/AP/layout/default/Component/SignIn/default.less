@@ -1,0 +1,103 @@
+.floatbox & {
+  background-color: @colorBg;
+}
+
+.AP_Form_SignIn {
+  text-align: left;
+  max-width: 100%;
+
+  @media (min-width: 400px) {
+    display: inline-block;
+  }
+}
+
+.formField, .formAction {
+  padding: 6px 12px;
+
+  @media (min-width: 400px) {
+    width: auto;
+    float: left;
+    padding: 0;
+
+    .CM_FormField_Text {
+      padding-right: 5px;
+
+      input {
+        width: 130px;
+      }
+    }
+  }
+}
+
+.formField {
+  @media (min-width: 400px) {
+
+    .CM_FormField_Text {
+      padding-right: 5px;
+
+      input {
+        width: 130px;
+      }
+    }
+  }
+
+  > .input {
+    margin: 0;
+  }
+}
+
+.formAction {
+  text-align: center;
+
+  .button {
+    margin: 0;
+  }
+}
+
+.CM_FormField_Boolean {
+  line-height: normal;
+
+  input[type=checkbox] + label {
+    margin-left: 16px;
+
+    &:before {
+      left: -16px;
+      margin-top: -6px;
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.small {
+  font-size: 10px;
+  color: @colorFgSubtle;
+  display: inline-block;
+
+  &:hover {
+    color: @colorFg;
+    text-decoration: none;
+  }
+}
+
+.visitor {
+  position: relative;
+  padding: 10px;
+  border-top: @colorFgBorderEmphasize1;
+  background-color: fadeout(@colorFg, 80);
+  text-align: center;
+
+  h2 {
+    color: @colorFgTheme;
+    margin-right: 5px;
+    display: inline-block;
+    line-height: @sizeButton+2;
+  }
+
+  &:after {
+    .triangle(transparent, transparent, fadeout(@colorFg, 80), transparent, 8px);
+    top: -8px;
+    left: 50%;
+    margin-left: -4px;
+  }
+}

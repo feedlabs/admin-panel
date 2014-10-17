@@ -1,0 +1,104 @@
+.CM_Page_Abstract {
+  max-width: @maxPageWidth;
+  margin: 0 auto;
+
+  .advertisement-leaderboard > *:not(:empty) {
+    padding: 7px 7px 0;
+
+    @media (min-width: @breakpointSmall) {
+      padding: 12px 12px 0;
+    }
+  }
+
+  .columnContent {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 200px;
+    padding: 7px;
+
+    @media (min-width: @breakpointSmall) {
+      padding: 12px;
+    }
+
+    @media (min-height: @breakpointSmall) {
+      min-height: 500px;
+    }
+
+    &.twoColumnContent {
+      @media (min-width: 796px) {
+        display: table;
+        table-layout: fixed; //needed for word-wrap to work
+      }
+
+      .columnContentLeft, .columnContentRight {
+        box-sizing: border-box;
+
+        @media (min-width: 796px) {
+          display: table-cell;
+          vertical-align: top;
+        }
+      }
+
+      .columnContentRight {
+        @media (min-width: 796px) {
+          width: 262px; //adzone + padding
+          padding-left: 12px;
+        }
+
+        &.drop {
+          display: none;
+
+          @media (min-width: 796px) {
+            display: table-cell;
+          }
+        }
+      }
+    }
+  }
+
+  #footer {
+    margin: 30px 7px 30px;
+    padding-bottom: 5px;
+
+    @media (min-width: @breakpointSmall) {
+      margin: 30px 12px 30px;
+    }
+
+    border-top: 1px solid @colorFgBorderEmphasize3;
+
+    &, a {
+      color: @colorFgSubtle;
+    }
+
+    .AP_Component_LanguageSelector, .copyright {
+      float: right;
+    }
+
+    .copyright {
+      padding: 5px;
+    }
+
+    .menu.about {
+      > a {
+        display: none;
+      }
+
+      li {
+        display: none;
+
+        &.AP_Page_About, &.AP_Page_Blog {
+          display: inline-block;
+        }
+
+        a {
+          padding: 5px;
+          display: inline-block;
+        }
+
+        @media (min-width: @breakpointMedium) {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
