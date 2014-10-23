@@ -46,5 +46,7 @@ class AP_App_Auth {
     private static function _generateHash($base, $salt) {
         $hash = hash('sha256', $salt . ':' . $base);
         return $hash;
+
+
     }
 }
