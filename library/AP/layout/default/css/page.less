@@ -2,14 +2,6 @@
   max-width: @maxPageWidth;
   margin: 0 auto;
 
-  .advertisement-leaderboard > *:not(:empty) {
-    padding: 7px 7px 0;
-
-    @media (min-width: @breakpointSmall) {
-      padding: 12px 12px 0;
-    }
-  }
-
   .columnContent {
     box-sizing: border-box;
     width: 100%;
@@ -70,11 +62,8 @@
       color: @colorFgSubtle;
     }
 
-    .AP_Component_LanguageSelector, .copyright {
-      float: right;
-    }
-
     .copyright {
+      float: right;
       padding: 5px;
     }
 
@@ -84,18 +73,10 @@
       }
 
       li {
-        display: none;
-
-        &.AP_Page_About, &.AP_Page_Blog {
-          display: inline-block;
-        }
+        display: inline-block;
 
         a {
           padding: 5px;
-          display: inline-block;
-        }
-
-        @media (min-width: @breakpointMedium) {
           display: inline-block;
         }
       }

@@ -86,10 +86,10 @@ class AP_Model_User extends CM_Model_User {
 
     /**
      * @param string $username
-     * @return boolean
+     * @return bool
      */
     public static function usernameIsValid($username) {
-        return (boolean) preg_match("/^[" . self::USERNAME_CHARACTERS . "]*$/", $username);
+        return (bool) preg_match("/^[" . self::USERNAME_CHARACTERS . "]*$/", $username);
     }
 
     /**

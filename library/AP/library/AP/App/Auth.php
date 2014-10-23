@@ -22,7 +22,7 @@ class AP_App_Auth {
     /**
      * @param string $login
      * @param string $password
-     * @return bool|AP_Model_User
+     * @return AP_Model_User|bool
      */
     public static function checkLogin($login, $password) {
         $userId = CM_Db_Db::exec("SELECT `userId`  FROM `ap_user` WHERE (`username` = ? OR `email` = ?)", array($login, $login))->fetchColumn();

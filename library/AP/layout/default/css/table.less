@@ -6,7 +6,6 @@ table {
       background-color: fadeout(@colorBgEmphasize3, 50);
     }
 
-
     th, td {
       padding: 4px 8px;
       border-top: 1px solid @colorFgBorderEmphasize2;
@@ -14,27 +13,8 @@ table {
       .nowrap;
     }
 
-    th {
-      &.headerEntity {
-        padding-top: 15px;
-        text-align: left;
-        color: @colorFgHeading;
-      }
-    }
-
     td {
       background: none;
-
     }
-
-    &.highlight {
-      background-color: fadeout(@colorNotice, 90);
-
-      .button {
-        outline: 3px solid fadeout(@colorNotice, 50);
-      }
-    }
-
-
   }
 }
