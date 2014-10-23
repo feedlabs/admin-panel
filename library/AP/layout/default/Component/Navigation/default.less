@@ -24,40 +24,6 @@
     }
   }
 
-  .advertisement {
-    display: none;
-  }
-
-  .userLink {
-    display: block;
-    .nowrap;
-    text-decoration: none;
-    padding: 10px 7px 8px 7px;
-
-    .user-thumb {
-      margin-right: 7px;
-      display: inline-block;
-      vertical-align: middle;
-      width: 26px;
-    }
-
-    .username {
-      .username-label {
-        font-size: 13px;
-      }
-    }
-  }
-
-  .coins {
-    float: right;
-    padding: 0 12px;
-    line-height: @barSize;
-
-    .label {
-      text-decoration: none;
-    }
-  }
-
   > .menu-sub {
     position: relative;
 
@@ -129,42 +95,40 @@
     margin: 0;
   }
 
-  .AP_Form_Logout {
-    .button {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 8px 12px;
-      border: 0;
-      font-weight: normal;
-      background: none;
-      filter: none;
-      color: darken(@colorFgTheme, 30);
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
-      font-size: @fontSize;
-      text-align: left;
+  .button.logout {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 8px 12px;
+    border: 0;
+    font-weight: normal;
+    background: none;
+    filter: none;
+    color: darken(@colorFgTheme, 30);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    font-size: @fontSize;
+    text-align: left;
 
-      .label {
-        line-height: 1;
-        vertical-align: baseline;
-      }
+    .label {
+      line-height: 1;
+      vertical-align: baseline;
+    }
+
+    .icon {
+      font-size: 15px;
+      margin-right: 14px;
+      display: inline-block;
+      width: 1.25em;
+      text-align: center;
+      color: @colorFgSubtle;
+    }
+
+    &:hover {
+      background-color: darken(@colorFg, 10);
 
       .icon {
-        font-size: 15px;
-        margin-right: 14px;
-        display: inline-block;
-        width: 1.25em;
-        text-align: center;
-        color: @colorFgSubtle;
-      }
-
-      &:hover {
-        background-color: darken(@colorFg, 10);
-
-        .icon {
-          color: lighten(@colorFgSubtle, 25);
-        }
+        color: lighten(@colorFgSubtle, 25);
       }
     }
   }

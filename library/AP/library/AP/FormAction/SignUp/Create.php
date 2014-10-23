@@ -24,26 +24,11 @@ class AP_FormAction_SignUp_Create extends CM_FormAction_Abstract {
         $data['site'] = $response->getSite();
         $data['language'] = $response->getRequest()->getLanguage();
 
-        $action = new AP_Action_User(AP_Action_Abstract::CREATE, $ip);
-        $action->prepare();
-
         $user = AP_Model_User::createStatic($data);
-        $user->getProfile()->getFields()->set('match_sex', $data['match_sex']);
-
-        $action->setActor($user);
-        $action->notify($user);
-
-        $user->sendEmailVerificationRequest();
 
         $response->getRequest()->getSession()->setUser($user);
         $response->getRequest()->getSession()->set('firstvisit', true);
 
-        $affiliateList = AP_Model_Affiliate::findByRequest($response->getRequest());
-        /** @var AP_Model_Affiliate $affiliate */
-        foreach ($affiliateList as $affiliate) {
-            $affiliate->addUser($user);
-            $provider = $affiliate->getProvider();
-            $provider->onSignUp($affiliate, $user);
-        }
+        $response->reloadPage();
     }
 }

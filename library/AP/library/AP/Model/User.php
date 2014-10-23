@@ -47,6 +47,8 @@ class AP_Model_User extends CM_Model_User {
         return $this->_change();
     }
 
+
+
     protected function _loadData() {
         $return = CM_Db_Db::exec("SELECT `main`.*, `secondary`.*, `online`.`userId` AS `online`, `online`.`visible`
 								  FROM `cm_user` AS `main`
@@ -83,6 +85,44 @@ class AP_Model_User extends CM_Model_User {
     }
 
     /**
+     * @param string $username
+     * @return boolean
+     */
+    public static function usernameIsValid($username) {
+        return (boolean) preg_match("/^[" . self::USERNAME_CHARACTERS . "]*$/", $username);
+    }
+
+    /**
+     * @param string $username
+     * @return AP_Model_User|null
+     */
+    public static function findUsername($username) {
+        $cacheKey = self::_getUsernameCacheKey($username);
+        $cache = CM_Cache_Shared::getInstance();
+        if (($id = $cache->get($cacheKey)) === false) {
+            $id = CM_Db_Db::select('ap_user', 'userId', array('username' => $username))->fetchColumn();
+            if (!$id) {
+                return null;
+            }
+            $cache->set($cacheKey, (int) $id);
+        }
+        return new self($id);
+    }
+
+    /**
+     * @param string $email
+     * @return AP_Model_User|null
+     */
+    public static function findEmail($email) {
+        $id = CM_Db_Db::select('ap_user', 'userId', array('email' => $email))->fetchColumn();
+        if (!$id) {
+            return null;
+        }
+        return new self($id);
+    }
+
+
+    /**
      * @param array $data
      * @throws CM_Exception|Exception
      * @return AP_Model_User
@@ -117,5 +157,13 @@ class AP_Model_User extends CM_Model_User {
         }
 
         return new self($userId);
+    }
+
+    /**
+     * @param string $username
+     * @return string
+     */
+    private static function _getUsernameCacheKey($username) {
+        return AP_CacheConst::User . '_username:' . $username;
     }
 }

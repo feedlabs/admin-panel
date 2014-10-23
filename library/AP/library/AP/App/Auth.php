@@ -8,7 +8,7 @@ class AP_App_Auth {
      * @return string
      */
     public static function generateHashUserPassword(CM_Model_User $user, $password) {
-        return self::_generateHash($password . ':' . $user->getId(), '6t9q58679grt34078nhuwefpwipneklhmjktikz8itseydxaxyoi827b5f8i2d324deagstzujj');
+        return self::_generateHash($password . ':' . $user->getId(), '6t9qdslghdkasjghdf89g7dfs98ghdfug87afdgzoi827b5f8i2d324deagstzujj');
     }
 
     /**
@@ -16,7 +16,7 @@ class AP_App_Auth {
      * @return string
      */
     public static function generateHashUser(AP_Model_User $user) {
-        return self::_generateHash($user->getId(), 'zikc686c8k5647khkbjkhlbjk45iogrepi7887wuguw5768o576niugt94u938jng94j595gj4f');
+        return self::_generateHash($user->getId(), 'zikc686c8k564sadkfhsda98f7sad97f98asdhfiuasdfadszfa4u938jng94j595gj4f');
     }
 
     /**

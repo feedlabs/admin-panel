@@ -16,13 +16,6 @@ var AP_Layout_Default = CM_Layout_Abstract.extend({
   /** @type {Boolean} */
   _shareVisible: false,
 
-  events: {
-    'click .closeChat': 'hideChat',
-    'click .toggleShare': function() {
-      this.showShare();
-    }
-  },
-
   ready: function() {
     var self = this;
 
@@ -74,15 +67,7 @@ var AP_Layout_Default = CM_Layout_Abstract.extend({
 
     this.on('navigate', function() {
       this.hideNavigation();
-      this.hideChat();
-      this.hideShare(true);
     }, this);
-
-    this.bindJquery($(document), 'scroll', _.throttle(function() {
-      if ($(document).scrollTop() > 800) {
-        this.hideShare();
-      }
-    }, 200));
   },
 
   showNavigation: function() {
