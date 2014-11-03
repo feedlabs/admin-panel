@@ -21,9 +21,6 @@ class AP_FormAction_SignIn_Process extends CM_FormAction_Abstract {
         }
 
         $response->getRequest()->getSession()->setUser($user);
-        if ($params->has('remember_me') && $params->getBoolean('remember_me')) {
-            $response->getRequest()->getSession()->setLifetime(86400 * 14);
-        }
 
         $response->reloadPage();
     }

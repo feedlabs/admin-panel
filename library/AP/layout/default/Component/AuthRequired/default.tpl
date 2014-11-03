@@ -1,9 +1,9 @@
 <ul class="tabs menu-tabs">
   <li class="hasIcon hasLabel {if !$hadViewer}active{/if}">
-    {link icon="edit" label={translate 'Sign Up'}}
+    {link icon="edit" label='Sign Up'}
   </li>
   <li class="hasIcon hasLabel {if $hadViewer}active{/if}">
-    {link icon="profile" label={translate 'Login'}}
+    {link icon="profile" label='Login'}
   </li>
 </ul>
 <div class="tabs-content">

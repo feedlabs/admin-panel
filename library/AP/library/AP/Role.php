@@ -2,18 +2,10 @@
 
 class AP_Role {
 
-    const FREEUSER = 1;
-    const PREMIUMUSER = 2;
-    const ADMIN = 3;
+    const ADMIN = 1;
 
-    /**
-     * @return int[]
-     */
-    public static function getRoles() {
-        return array(
-            self::FREEUSER,
-            self::PREMIUMUSER,
-            self::ADMIN,
-        );
-    }
+    // add all possible roles
+    // on signIn get all roles from API and set to the user
+    // delete all roles which are not coming from the API
+
 }

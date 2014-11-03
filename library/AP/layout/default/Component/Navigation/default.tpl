@@ -3,5 +3,5 @@
   <hr />
   {menu name="account" class="menu-sub"}
   <hr />
-  {button_link label="{translate 'Logout'}" icon='logout' class='logout processLogout' data=['click-spinner' => 'true']}
+  {button_link label='Logout' icon='logout' class='logout processLogout' data=['click-spinner' => 'true']}
 </nav>
