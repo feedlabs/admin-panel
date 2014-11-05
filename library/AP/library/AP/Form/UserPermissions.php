@@ -16,7 +16,6 @@ class AP_Form_UserPermissions extends CM_Form_Abstract {
 
     public function prepare(CM_Frontend_Environment $environment) {
         $user = $this->getParams()->getString('user');
-
         // todo: get user permissions over API and set to formFields
     }
 }

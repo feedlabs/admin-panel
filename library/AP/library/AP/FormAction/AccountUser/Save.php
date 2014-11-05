@@ -16,7 +16,6 @@ class AP_FormAction_AccountUser_Save extends CM_FormAction_Abstract {
         }
     }
 
-
     protected function _process(CM_Params $params, CM_Response_View_Form $response, CM_Form_Abstract $form) {
         $email = $params->getString('email');
         /** @var AP_Model_User $viewer */

@@ -1,11 +1,11 @@
 /**
- * @class AP_Component_ApplicationFeedList
+ * @class AP_Component_FeedView
  * @extends AP_Component_Abstract
  */
-var AP_Component_ApplicationFeedList = AP_Component_Abstract.extend({
+var AP_Component_FeedView = AP_Component_Abstract.extend({
 
   /** @type String */
-  _class: 'AP_Component_ApplicationFeedList',
+  _class: 'AP_Component_FeedView',
 
   events: {
     'click .deleteFeed': function(e) {
@@ -13,6 +13,12 @@ var AP_Component_ApplicationFeedList = AP_Component_Abstract.extend({
       var feedId = $(e.currentTarget).data('feed-id');
       this.deleteFeed(applicationId, feedId);
       return false;
+    }
+  },
+
+  childrenEvents: {
+    'AP_Form_Feed success': function() {
+      this.reload();
     }
   },
 

@@ -9,7 +9,7 @@ var AP_Component_ApplicationViewSmall = AP_Component_Abstract.extend({
 
   events: {
     'click .deleteApplication': function(e) {
-      var applicationId = $(e.currentTarget).closest('.application').data('application-id');
+      var applicationId = $(e.currentTarget).data('application-id');
       this.deleteApplication(applicationId);
       return false;
     }

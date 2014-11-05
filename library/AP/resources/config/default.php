@@ -7,10 +7,10 @@ return function (CM_Config_Node $config) {
     $config->CM_Model_User->class = 'AP_Model_User';
 
     $config->CM_Response_Page->catch = array(
-        'CM_Exception_Nonexistent'       => '/error/not-found',
-        'CM_Exception_InvalidParam'      => '/error/not-found',
-        'CM_Exception_AuthRequired'      => '/error/auth-required',
-        'CM_Exception_NotAllowed'        => '/error/not-allowed',
+//        'CM_Exception_Nonexistent'       => '/error/not-found',
+//        'CM_Exception_InvalidParam'      => '/error/not-found',
+//        'CM_Exception_AuthRequired'      => '/error/auth-required',
+//        'CM_Exception_NotAllowed'        => '/error/not-allowed',
     );
 
     $config->CM_Response_View_Abstract->catch = array(

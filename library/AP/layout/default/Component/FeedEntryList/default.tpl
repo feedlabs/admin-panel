@@ -1,21 +1,15 @@
 {box}
 {box_header}
-  <h2>FeedEntryList</h2>
+  <span class="box-info">Amount: {$entryList->getCount()}</span>
+  <h2>Entry List | FeedName: {$feed->getName()}</h2>
 {/box_header}
-  <table>
-    <tr>
-      <th>Id</th>
-      <th>Data</th>
-      <th></th>
-    </tr>
-    {for $foo=1 to 25}
-      <tr class="entry" data-entry-id="4389738275">
-        <td>4389738275</td>
-        <td>dlighdjksghthe printing</td>
-        <td class="actions">
-          {button_link title='Delete' icon='delete' iconConfirm='delete-confirm' class='warning deleteEntry' data=['click-confirmed' => true]}
-        </td>
-      </tr>
-    {/for}
-  </table>
+  <ul>
+    {foreach $entryList as $entry}
+      <li class="feed" data-feed-id="{$entry->getId()}">
+        {$entry->getId()} |
+        {$entry->getData()} |
+        {button_link title='Delete' icon='delete' iconConfirm='delete-confirm' class='warning deleteEntry' data=['entry-id'=>$entry->getId(), 'feed-id'=>$feed->getId(), 'application-id'=>$application->getId(), 'click-confirmed' => true]}
+      </li>
+    {/foreach}
+  </ul>
 {/box}
