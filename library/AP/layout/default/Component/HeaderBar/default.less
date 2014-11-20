@@ -1,0 +1,269 @@
+& {
+  max-width: 990px;
+  margin: 0 auto;
+  min-height: @barSize;
+}
+
+.bar {
+  position: relative;
+
+  &.search-expand {
+    .navButton, .navButton.search, .logo {
+      display: none;
+    }
+
+    .searchForm {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.navButton {
+  &.navigation {
+    float: left;
+  }
+
+  &.indication {
+    position: relative;
+    float: left;
+    opacity: 1;
+    padding: 0 4px;
+    min-width: 0;
+
+    &.empty {
+      opacity: .5;
+
+      .counter {
+        display: none;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+    .counter {
+      position: relative;
+      display: inline-block;
+      .nowrap;
+      top: -7px;
+      left: -6px;
+      max-width: 25px;
+      padding: 2px 3px;
+      border-radius: 2px;
+      background-color: @colorNotice;
+      font-size: @fontSizeTiny;
+      line-height: 1;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+
+  &.search {
+    float: right;
+    display: none;
+
+    @media (max-width: 549px) {
+      display: block;
+    }
+  }
+
+  &.chat {
+    float: right;
+
+    &.unread {
+      opacity: 1;
+
+      .icon-chat {
+        display: block;
+        .animation(blink, 1500ms, ease, 0, infinite);
+      }
+    }
+  }
+
+  &.add {
+    float: right;
+    position: relative;
+    transition: 200ms;
+
+    .icon {
+      display: inline-block;
+      transition: 200ms;
+    }
+
+    &.active {
+      opacity: 1;
+
+      .icon {
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        .triangle(transparent, transparent, darken(@colorBg, 1), transparent, 6px);
+        top: auto;
+        bottom: 0;
+        left: 50%;
+        margin-left: -6px;
+        transform: translate(0, 0);
+        opacity: 1;
+        transition: 200ms;
+      }
+
+      &.hideTriangle {
+        &:after {
+          transform: translate(0, 6px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.logo.monochrome {
+  display: block;
+  float: left;
+  height: @barSize;
+  background-size: 65%;
+  background-image: image('logo-monochrome.svg');
+
+  html.no-svg & {
+    background-image: image('logo-monochrome.png');
+  }
+
+  &:not(.viewer) {
+    float: none;
+    margin: 8px auto 0;
+    width: 140px;
+    background-size: 100%;
+
+    @media (min-width: 550px) {
+      float: left;
+      margin: 10px 12px;
+    }
+  }
+
+  &.viewer {
+    width: @barSize;
+    background-image: image('logo-monochrome-mini.svg');
+
+    html.no-svg & {
+      background-image: image('logo-monochrome-mini.png');
+    }
+
+    @media (min-width: 420px) {
+      width: 100px;
+      margin: 0 8px;
+      background-size: 85%;
+      background-image: image('logo-monochrome.svg');
+
+      html.no-svg & {
+        background-image: image('logo-monochrome.png');
+      }
+    }
+  }
+}
+
+.searchForm {
+  box-sizing: border-box;
+  display: none;
+  position: relative;
+  float: right;
+  padding: 0 6px;
+  width: 200px;
+
+  @media (min-width: 550px) {
+    display: block;
+  }
+
+  @media (min-width: 660px) {
+    width: 300px;
+  }
+
+  height: @barSize;
+  line-height: @barSize - 2px;
+
+  .AP_Form_SearchContent {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    line-height: 1;
+
+    .CM_FormField_Text {
+      .textinput {
+        background-color: fadeout(@colorBg, 85);
+        border-color: transparent;
+        color: @colorFgTheme;
+
+        &:focus {
+          border-color: fadeout(@colorBg, 50);
+        }
+      }
+      .placeholder(@colorFgTheme);
+    }
+  }
+
+  .icon-search {
+    pointer-events: none;
+    position: absolute;
+    color: @colorFgTheme;
+    top: 2px;
+    right: 12px;
+    opacity: .6;
+  }
+}
+
+.AP_Component_SignIn {
+  text-align: center;
+
+  .AP_Form_SignIn {
+    box-sizing: border-box;
+    padding: 5px 10px;
+  }
+
+  @media (min-width: 550px) {
+    text-align: right;
+
+    .visitor {
+      &:after {
+        left: 10%;
+      }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .AP_Form_SignIn {
+      float: right;
+    }
+
+    .visitor {
+      float: left;
+      margin: 8px;
+      padding: 7px;
+
+      &:after {
+        border-bottom-color: transparent;
+        border-right-color: fadeout(@colorFg, 80);
+        top: 50%;
+        left: -16px;
+        margin-left: 0;
+        margin-top: -8px;
+      }
+    }
+  }
+
+  .small {
+    color: darken(@colorFgTheme, 10);
+
+    &:hover {
+      color: @colorFgTheme;
+    }
+  }
+
+  .formField-error {
+    color: lighten(@colorNotice, 30);
+  }
+}

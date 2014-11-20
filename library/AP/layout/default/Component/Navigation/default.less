@@ -1,0 +1,135 @@
+& {
+  height: 100%;
+  overflow-y: hidden;
+
+  &:hover {
+    overflow-y: auto;
+  }
+}
+
+.main {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+
+  a {
+    color: darken(@colorFgTheme, 30);
+
+    &:hover {
+      background-color: darken(@colorFg, 10);
+
+      .icon {
+        color: lighten(@colorFgSubtle, 45);
+      }
+    }
+  }
+
+  > .menu-sub {
+    position: relative;
+
+    > li {
+      position: relative;
+
+      > a {
+        padding-left: 12px;
+        padding-right: 12px;
+        color: darken(@colorFgTheme, 30);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+
+        .icon {
+          color: @colorFgSubtle;
+          font-size: 15px;
+          margin-right: 14px;
+        }
+
+        &:hover {
+          .icon {
+            color: lighten(@colorFgSubtle, 25);
+          }
+        }
+
+        &:active {
+          background-color: fadeout(@colorBg, 90);
+        }
+
+      }
+      &.active {
+        position: relative;
+
+        > a {
+          position: relative;
+          background-color: transparent;
+          font-weight: bold;
+          color: darken(@colorFgTheme, 20);
+
+          .icon {
+            color: @colorFgHeading;
+          }
+        }
+
+        &:after {
+          .triangle(transparent, @colorBgBody, transparent, transparent, 7px);
+          top: 20px;
+          left: auto;
+          right: 0;
+
+          .offCanvas-active & {
+            display: none;
+          }
+        }
+
+      }
+
+      &.AP_Page_Account_Premium > a {
+        color: @colorPremium;
+
+        .icon {
+          color: @colorPremium;
+        }
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid lighten(@colorFg, 5);
+    margin: 0;
+  }
+
+  .button.logout {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 8px 12px;
+    border: 0;
+    font-weight: normal;
+    background: none;
+    filter: none;
+    color: darken(@colorFgTheme, 30);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    font-size: @fontSize;
+    text-align: left;
+
+    .label {
+      line-height: 1;
+      vertical-align: baseline;
+    }
+
+    .icon {
+      font-size: 15px;
+      margin-right: 14px;
+      display: inline-block;
+      width: 1.25em;
+      text-align: center;
+      color: @colorFgSubtle;
+    }
+
+    &:hover {
+      background-color: darken(@colorFg, 10);
+
+      .icon {
+        color: lighten(@colorFgSubtle, 25);
+      }
+    }
+  }
+}

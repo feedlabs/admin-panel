@@ -17,5 +17,10 @@ var AP_App = CM_App.extend({
       }
       return false;
     });
+
+    this.error.bindType('CM_Exception_Nonexistent', function(msg, type, isPublic) {
+      cm.window.hint(cm.language.get('The content you tried to interact with has been deleted.'));
+      return false;
+    });
   }
 });

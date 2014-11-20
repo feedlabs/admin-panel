@@ -1,16 +1,7 @@
-<ul class="nav nav-sidebar">
-  {menu name='main'}
-</ul>
-
-{*<ul class="nav nav-sidebar">*}
-{*<li><a href="">Nav item</a></li>*}
-{*<li><a href="">Nav item again</a></li>*}
-{*<li><a href="">One more nav</a></li>*}
-{*<li><a href="">Another nav item</a></li>*}
-{*<li><a href="">More navigation</a></li>*}
-{*</ul>*}
-{*<ul class="nav nav-sidebar">*}
-{*<li><a href="">Nav item again</a></li>*}
-{*<li><a href="">One more nav</a></li>*}
-{*<li><a href="">Another nav item</a></li>*}
-{*</ul>*}
+<nav class="main">
+  {menu name='browse' class='menu-sub'}
+  <hr />
+  {menu name="account" class="menu-sub"}
+  <hr />
+  {button_link label='Logout' icon='logout' class='logout processLogout' data=['click-spinner' => 'true']}
+</nav>

@@ -6,3 +6,7 @@ $bootloader = new CM_Bootloader(dirname(__DIR__) . '/');
 $bootloader->load();
 
 echo "test\n";
+
+AP_Model_User::_createStatic([
+
+]);

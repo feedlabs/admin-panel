@@ -1,5 +1,7 @@
 {extends file=$render->getLayoutPath('Page/Abstract/default.tpl')}
 
 {block name='content-main'}
-  Overview content
+  Index
+  {component name='AP_Component_SignIn'}
+  {component name='AP_Component_SignUp'}
 {/block}

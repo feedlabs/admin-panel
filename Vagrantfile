@@ -19,10 +19,6 @@ Vagrant.configure('2') do |config|
   config.vm.network :private_network, ip: '10.10.10.30'
   config.vm.network :public_network, :bridge => 'en0: Wi-Fi (AirPort)'
   config.vm.synced_folder '.', '/home/vagrant/admin-panel', :type => synced_folder_type, :rsync__args => ["--verbose", "--archive", "--delete", "-z"]
-  config.vm.synced_folder '../feedify', '/home/vagrant/feedify', :type => synced_folder_type if Dir.exists? '../feedify'
-  config.vm.synced_folder '../api', '/home/vagrant/api', :type => synced_folder_type if Dir.exists? '../api'
-  config.vm.synced_folder '../scenario-engine', '/home/vagrant/scenario-engine', :type => synced_folder_type if Dir.exists? '../scenario-engine'
-  config.vm.synced_folder '../sdk-js', '/home/vagrant/sdk-js', :type => synced_folder_type if Dir.exists? '../sdk-js'
   config.vm.synced_folder '../sdk-php', '/home/vagrant/sdk-php', :type => synced_folder_type if Dir.exists? '../sdk-php'
 
   config.librarian_puppet.puppetfile_dir = 'puppet'
@@ -37,6 +33,14 @@ Vagrant.configure('2') do |config|
     'cd /home/vagrant/admin-panel',
     'composer --no-interaction install --dev',
   ].join(' && ')
+
+  if ENV['LINK']
+    config.vm.provision 'shell', run: 'always', inline: [
+      'cd /home/vagrant/admin-panel',
+      'rm -rf vendor/feedlabs/sdk-php',
+      'ln -s ../../../sdk-php vendor/feedlabs/sdk-php',
+    ].join(' && ')
+  end
 
   config.vm.provision 'shell', run: 'always', inline: [
     'cd /home/vagrant/admin-panel',

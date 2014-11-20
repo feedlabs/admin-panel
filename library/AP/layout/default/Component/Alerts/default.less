@@ -1,0 +1,55 @@
+& {
+  position: fixed;
+  transform: translateZ(0);
+  bottom: 40px;
+  z-index: 80;
+  left: 15px;
+
+  .alert {
+    position: relative;
+    display: block;
+    width: 200px;
+    right: 100%;
+    margin-top: 4px;
+    padding: 3px 26px 3px 0;
+    border-radius: 2px;
+    background-color: lighten(@colorNotice, 10);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    color: @colorBg;
+    text-decoration: none;
+    transition: margin-left 100ms;
+
+    &:before {
+      .triangle(transparent, lighten(@colorNotice, 10), transparent, transparent, 7px);
+      left: -14px;
+    }
+
+    .alert-content {
+      overflow: hidden;
+      min-height: 36px;
+      margin-left: 42px;
+    }
+
+    .alert-thumb {
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      width: 30px;
+      height: auto;
+    }
+
+    .alert-icon {
+      color: @colorFgTheme;
+      position: absolute;
+      right: 5px;
+      opacity: .7;
+      font-size: 18px;
+    }
+
+    &:hover {
+      .alert-icon {
+        opacity: 1;
+      }
+    }
+  }
+}

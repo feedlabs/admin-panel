@@ -1,0 +1,20 @@
+table {
+  width: 100%;
+
+  tr {
+    &:nth-child(2n) {
+      background-color: fadeout(@colorBgEmphasize3, 50);
+    }
+
+    th, td {
+      padding: 4px 8px;
+      border-top: 1px solid @colorFgBorderEmphasize2;
+      text-align: left;
+      .nowrap;
+    }
+
+    td {
+      background: none;
+    }
+  }
+}
