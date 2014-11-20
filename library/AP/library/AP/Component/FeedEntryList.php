@@ -13,13 +13,17 @@ class AP_Component_FeedEntryList extends AP_Component_Abstract {
     }
 
     public function ajax_deleteEntry(CM_Params $params, CM_Frontend_JavascriptContainer_View $handler, CM_Response_View_Ajax $response) {
-        $application = AP_Helper::getApplication($params->getString('applicationId'));
-        $feed = AP_Helper::getFeed($params->getString('applicationId'), $params->getString('feedId'));
+        $applicationId = $params->getString('applicationId');
+        $feedId = $params->getString('feedId');
         $entryId = (string) $params->get('entryId');
 
-        // delete entry
+        $client = AP_Helper::getClient();
+        $client->entry->delete($applicationId, $feedId, $entryId);
 
         $handler->message('Success: Entry delete.');
+
+        $application = AP_Helper::getApplication($applicationId);
+        $feed = AP_Helper::getFeed($applicationId, $feedId);
         $response->reloadComponent(['application' => $application, 'feed' => $feed]);
     }
 }

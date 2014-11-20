@@ -12,13 +12,4 @@ class AP_Component_ApplicationViewSmall extends AP_Component_Abstract {
         $application = $this->getParams()->get('application');
         $viewResponse->set('application', $application);
     }
-
-    public function ajax_deleteApplication(CM_Params $params, CM_Frontend_JavascriptContainer_View $handler, CM_Response_View_Ajax $response) {
-        $application = AP_Helper::getApplication($params->getString('applicationId'));
-
-        // delete application
-
-        $handler->message('Success: Application delete.');
-        $response->reloadComponent(['application' => $application]);
-    }
 }

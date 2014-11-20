@@ -10,9 +10,10 @@ class AP_Component_ApplicationView extends AP_Component_Abstract {
     }
 
     public function ajax_deleteApplication(CM_Params $params, CM_Frontend_JavascriptContainer_View $handler, CM_Response_View_Ajax $response) {
-        $application = AP_Helper::getApplication($params->getString('applicationId'));
+        $applicationId = $params->getString('applicationId');
 
-        // delete application
+        $client = AP_Helper::getClient();
+        $client->application->delete($applicationId);
 
         $handler->message('Success: Application delete.');
         $response->redirect('AP_Page_ApplicationOverview');

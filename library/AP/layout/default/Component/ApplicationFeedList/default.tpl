@@ -8,7 +8,7 @@
       <li class="feed" data-feed-id="{$feed->getId()}">
         {$feed->getId()} |
         {$feed->getName()} |
-        {$feed->getChannel()} |
+        {$feed->getChannelId()} |
         {button_link page='AP_Page_Feed' application=$application->getId() feed=$feed->getId() label='view'}
         {button_link title='Delete' icon='delete' iconConfirm='delete-confirm' class='warning deleteFeed' data=['feed-id'=>$feed->getId(), 'application-id'=>$application->getId(), 'click-confirmed' => true]}
       </li>

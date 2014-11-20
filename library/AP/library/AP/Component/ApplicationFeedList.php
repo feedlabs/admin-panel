@@ -10,12 +10,14 @@ class AP_Component_ApplicationFeedList extends AP_Component_Abstract {
     }
 
     public function ajax_deleteFeed(CM_Params $params, CM_Frontend_JavascriptContainer_View $handler, CM_Response_View_Ajax $response) {
-        $application = AP_Helper::getApplication($params->getString('applicationId'));
+        $applicationId = $params->getString('applicationId');
         $feedId = (string) $params->get('feedId');
 
-        // delete feed
+        $client = AP_Helper::getClient();
+        $client->feed->delete($applicationId, $feedId);
 
         $handler->message('Success: Feed delete.');
+        $application = AP_Helper::getApplication($applicationId);
         $response->reloadComponent(['application' => $application]);
     }
 }

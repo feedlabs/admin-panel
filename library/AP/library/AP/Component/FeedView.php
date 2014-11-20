@@ -13,9 +13,11 @@ class AP_Component_FeedView extends AP_Component_Abstract {
     }
 
     public function ajax_deleteFeed(CM_Params $params, CM_Frontend_JavascriptContainer_View $handler, CM_Response_View_Ajax $response) {
-        $feed = AP_Helper::getFeed($params->getString('applicationId'), $params->getString('feedId'));
+        $applicationId = $params->getString('applicationId');
+        $feedId = $params->getString('feedId');
 
-        // todo: delete Feed over API
+        $client = AP_Helper::getClient();
+        $client->feed->delete($applicationId, $feedId);
 
         $handler->message('Success: Feed delete.');
         $response->redirect('AP_Page_FeedOverview');
